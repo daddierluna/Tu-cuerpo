@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>AR.js + A-Frame — Hiro (Sim/Cam)</title>
+
+  <!-- Librerías: A-Frame primero, luego AR.js -->
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- HUD -->
+  <div id="hud">
+    <div id="status" class="badge">Cargando…</div>
+    <button id="modeBtn" class="btn">🔀 Cambiar modo</button>
+  </div>
+
+  <!-- Lienzo para la escena -->
+  <div id="stage"></div>
+
+  <!-- Tu lógica JS -->
+  <script src="./app.js"></script>
+</body>
+</html>
